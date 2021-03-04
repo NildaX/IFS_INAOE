@@ -1,0 +1,47 @@
+PURPOSE:
+ 
+        Provides a 2D interactive visualisation of the spaxels and spectra of a
+        3D cube.
+ 
+  EXPLANATION:
+        For install the package of prueba_ifsUW:
+		pip install prueba_ifsUW
+		
+		For show the window of prueba_ifsUW, en cualquier terminal of python run the next
+		code:
+		
+		from prueba_ifsUW import *
+		x = prueba_ifsUW()
+		
+		The program accept FITS files with extensions:
+		.fits
+		.fits.gz
+		
+		The fits files should have projection of RA and DEC
+		or grades
+		
+		
+		
+        The program displays one windows: 
+		on the right top have the files explorer, two panels to show the name of the object
+		and the state of the explorer (on, off, select a pixel for the center of the integrated region and show the integrated spectrum),
+		one panel to show messsages of the program like the dimensions of the cube, filters used, instruccions, errors, etc.,
+		next label at the right content the functions to the integrated region, entry for the radius, buttons for create files
+		when previusly draw circle and show the integrated spectrum of the spaxels inside the cirle:
+		
+		   Extracted FITS:         NAMEFITS_rscube_circle_centerx_centery.fits
+           Integrated ASCII:       NAMEFITS.spectrum_centerx_centery.txt
+           Espectrum FITS:         NAMEFITS.spectrum_centerx_centery.fits
+        Hacia abajo show the options to display axis in projections in RA-DEC and offsets.
+		Hacia abajo the functions for mark wavelength in the format of numbers separaters by a coma
+		example: 400,500
+        the values should be minimun value of the array lambda <= x <= maxinum value of the array lambda
+		next label at the right content the functions to display Color map for the image FITS
+		next label at the right content the functions to display Filter map for the image FITS
+		
+		
+		Several options are available to better visualise the data, including
+        the central wavelength and type of narrow/broad band image, different
+        color map and the display ranges in the spectral window.
+		
+		
